@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="layout" prefHeight="400.0" prefWidth="455.0" stylesheets="@../css/logged.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FriendshipsController">
+    <children>
+        <Label fx:id="shownUsername" layoutX="14.0" layoutY="27.0" />
+        <TableView fx:id="tableView" layoutX="12.0" layoutY="59.0" prefHeight="251.0" prefWidth="527.0">
+            <placeholder>
+                <Label text="You're currently not friends with anybody" />
+            </placeholder>
+            <columns>
+                <TableColumn fx:id="tableFriendName" prefWidth="264.6666564941406" text="Friend name" />
+                <TableColumn fx:id="tableFriendsFrom" prefWidth="260.0" text="Friends from" />
+            </columns>
+        </TableView>
+        <Button layoutX="35.0" layoutY="327.0" mnemonicParsing="false" onAction="#deleteFriend" text="Delete friend" />
+        <Button layoutX="149.0" layoutY="327.0" mnemonicParsing="false" onAction="#checkFriendRequests" text="Friend requests" />
+      <Button layoutX="276.0" layoutY="327.0" mnemonicParsing="false" onAction="#chatroom" text="Chatroom" />
+      <Button layoutX="365.0" layoutY="327.0" mnemonicParsing="false" onAction="#cancelFriendRequests" text="Cancel sent friend requests" />
+    </children>
+</AnchorPane>

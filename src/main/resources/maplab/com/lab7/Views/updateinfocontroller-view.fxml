@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0"
+            prefWidth="216.0" stylesheets="@../css/logged.css" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateAccountController">
+   <TextField fx:id="newUsername" layoutX="14.0" layoutY="38.0" promptText="New username"/>
+   <PasswordField fx:id="newPassword" layoutX="14.0" layoutY="85.0" promptText="New password"/>
+   <Button layoutX="73.0" layoutY="177.0" mnemonicParsing="false" onAction="#updateButton" text="Update"/>
+   <Text fx:id="updated" fill="RED" layoutX="22.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Updated"
+         visible="false"/>
+</AnchorPane>
